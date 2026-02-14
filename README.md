@@ -191,6 +191,7 @@ Il sert de guide pratique pour analyser la sécurité d’une application mobile
 
 
 ## 2 Idées de test :
+
 1. Test stockage local :
 Objectif : vérifier si des données sensibles sont stockées en clair.
 Méthode : examiner les fichiers dans /data/data/[package]/shared_prefs/.
@@ -198,9 +199,9 @@ Méthode : examiner les fichiers dans /data/data/[package]/shared_prefs/.
 2. Test logs applicatifs:
 Objectif : vérifier si des données sensibles apparaissent dans les logs.
 Méthode : analyser les logs avec adb logcat.
- 
 
-Step 16 : Traçabilité :
+ 
+## Step 16 : Traçabilité :
 
 -Fiche Environnement:
 
@@ -235,7 +236,6 @@ Accès écran détail + retour arrière
 4. Les interactions ADB (tap, back) fonctionnent comme prévu.
 
 
- 
  --Limites identifiées
 
 1. Environnement rooté pouvant modifier le comportement réel de sécurité.
