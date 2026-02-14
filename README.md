@@ -1,6 +1,6 @@
 # LAB 2 : Rooting Android
 
-# Step 1 : Rooter l'AVD :
+# Step 1 : Configuration et activation du mode root sur l’AVD :
 1. Demarrer le serveur ADB avec privilege root et remonter en mode lecture et ecriture.
 
 <p align="center"> <img src="images/im1.png" width="700"> </p>
@@ -13,7 +13,7 @@
 <p align="center"> <img src="images/im5.png" width="700"> </p>
 <p align="center"> <img src="images/im6.png" width="700"> </p>
 
-# Step 2 : Fiche périmètre:
+# Step 2 : Définition du périmètre de test (fiche synthétique):
 
 Application + version : DIVA (Damn Insecure and Vulnerable App) 
 <p align="center"> <img src="images/im7.png" width="700"> </p>
@@ -33,12 +33,12 @@ Réseau : Réseau de test isolé (aucune interaction avec un environnement réel
 <p align="center"> <img src="images/im7.1.png" width="500"> </p>
 <p align="center"> <img src="images/im7.2.png" width="400"> </p>
 
-# Step 4:  Installer et lancer l'app de test:
+# Step 4:  Installer et lancer l'app :
 <p align="center"> <img src="images/im8.png" width="700"> </p>
 <p align="center"> <img src="images/im9.png" width="700"> </p>
 <p align="center"> <img src="images/im10.png" width="400"> </p>
 
-# Step 5: Définir 3 scénarios simples:
+# Step 5: Définir 3 scénarios :
 ##DIVA – Scénarios de test (ADB)
 1. Scénario 1 — Ouvrir l’application Diva (Écran d’accueil)
 ##Objectif: Lancer DIVA et afficher l’écran principal.
@@ -79,7 +79,7 @@ Réseau : Réseau de test isolé (aucune interaction avec un environnement réel
 -L’écran détail s’affiche et Le bouton "Back" ramène à la liste principale
 
 
-# Step 6:  Lire Android Security:
+# Step 6:  Synthèse des fondements de la sécurité Android:
 
 La sécurité Android repose sur plusieurs couches de protection.
 Chaque application fonctionne dans une sandbox, ce qui signifie qu’elle est isolée des autres (comme une salle de classe fermée).
@@ -88,7 +88,7 @@ Le système garantit aussi l’intégrité globale, empêchant les modifications
 Le rooting peut contourner ces protections en donnant un accès privilégié au système.
 Comprendre ces couches aide à analyser les risques liés à la sécurité Android.
 
-# Step 7:  Verified Boot :
+# Step 7:  Compréhension et vérification de Verified Boot :
 ## Verified Boot — Principe et Vérification:
 Verified Boot est un mécanisme de sécurité qui contrôle l’intégrité du système dès le démarrage de l’appareil.
 Son rôle est de s’assurer que le système chargé au boot n’a pas été altéré ou modifié de manière non autorisée.
@@ -104,7 +104,7 @@ Si cette étape est compromise, les mécanismes de sécurité chargés ensuite p
 <p align="center"> <img src="images/s18.png" width="300"> </p>
 ### Orange : Système modifié ou bootloader déverrouillé
 
-# Step 8 : AVB (Android Verified Boot):
+# Step 8 : Présentation d’Android Verified Boot (AVB):
 
 ## Android Verified Boot (AVB):
 AVB est l’évolution moderne de Verified Boot (version 2.0), conçue pour offrir un contrôle d’intégrité plus robuste et plus flexible.
@@ -116,7 +116,7 @@ La protection anti-rollback bloque l’installation d’une version plus ancienn
 Cela évite qu’un attaquant ne remplace une version sécurisée par une version plus faible pour exploiter ses vulnérabilités.
 C’est comparable à empêcher le remplacement d’une serrure récente et sécurisée par un ancien modèle plus facile à forcer.
 
-# Step 9 : Définir le rooting:
+# Step 9 : Explication du  rooting:
 
 ##Définition du Rooting:
 Le rooting consiste à obtenir les privilèges de super-utilisateur sur un appareil Android.
@@ -124,7 +124,7 @@ Cela modifie le niveau de confiance du système et contourne certaines protectio
 En laboratoire, le root est utile pour analyser le comportement interne d’une application ou du système.
 Cependant, il comporte des risques importants et doit être réalisé dans un environnement isolé avec traçabilité et possibilité de réinitialisation.
 
-# Step 10: Intérêt du Rooting en Laboratoire (Non Opérationnel)
+# Step 10: Intérêt du Rooting en Laboratoire 
 En laboratoire, un environnement privilégié peut aider à observer des artefacts système normalement inaccessibles.
 Il permet également d’analyser les comportements runtime d’une application à un niveau plus bas que les permissions standards.
 Cela aide à tester la robustesse du stockage face à un attaquant disposant de privilèges élevés.
@@ -401,59 +401,6 @@ Un environnement de test doit être isolé, documenté et réinitialisé afin de
 
 
 
-##  Étape 20 — Checklist Finale
-
----
-
-#  Début de séance (PLAN)
-
-- [x] Périmètre rédigé et validé  
-- [x] AVD neuf / environnement propre  
-- [x] Application de test installée (DIVA)  
-- [x] 3 scénarios définis et documentés  
-- [x] Version Android / API notée  
-- [x] Version application notée  
-
----
-
-#  Pendant les tests (DO)
-
-- [x] Exécution contrôlée des scénarios  
-- [x] Captures d’écran réalisées  
-- [x] Commandes importantes enregistrées  
-- [x] Observations factuelles notées  
-
----
-
-#  Vérification (CHECK)
-
-- [x] Résultats cohérents et reproductibles  
-- [x] État Verified Boot vérifié  
-- [x] Root status documenté  
-- [x] Limites identifiées  
-
----
-
-#  Fin de séance (ACT)
-
-- [x] Données de test supprimées  
-- [x] Reset effectué (Wipe AVD / Reset device)  
-- [x] Preuve de réinitialisation capturée  
-- [x] Rapport + traçabilité sauvegardés  
-- [x] Aucun compte personnel utilisé  
-
----
-
-##  Méthodologie professionnelle
-
-Cette checklist suit le principe **PDCA (Plan – Do – Check – Act)** :
-
-- **Plan** : Préparer l’environnement et définir le périmètre  
-- **Do** : Exécuter les tests de manière contrôlée  
-- **Check** : Vérifier et documenter les résultats  
-- **Act** : Nettoyer et réinitialiser l’environnement  
-
-Cette approche garantit des tests reproductibles, fiables et conformes aux bonnes pratiques de sécurité.
 
 
 
