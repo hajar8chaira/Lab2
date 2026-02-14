@@ -9,50 +9,6 @@
 <p align="center"> <img src="images/im2.png" width="500"> </p>
 <p align="center"> <img src="images/im4.png" width="500"> </p>
 
-## Step 2 : Installation de Mobexler dans VirtualBox :
-
-<p align="center"> <img src="images/img4.png" width="800"> </p>
-<p align="center"> <img src="images/img5.png" width="800"> </p>
-Apres l´importation , dans Settings Network :
-<p align="center"> <img src="images/img6.png" width="800"> </p>
-<p align="center"> <img src="images/img20.png" width="800"> </p>
-
-## Step 3 : Lancement initial de la machine et configuration de l’accès :
-<p align="center"> <img src="images/img1.png" width="700"> </p>
-Acces au termial :
-<p align="center"> <img src="images/img8.png" width="700"> </p>
-
-## Step 4 : Vérification de réseau :
-1. Pour verifier les interfaces reseaux on utilise la commande ´ip a´ : 
-![ Screen8](images/img9.png)
-
-  - enp0s17 -> 10.0.2.15/24 -> NAT → accès Internet via VirtualBox
-![ Screen9](images/img10.png)
-
-  - enp0s8 -> 192.168.56.103/24 -> Host-Only → communication VM ↔ hôte
-![ Screen10](images/img11.png)
-
-2. Les routes par défaut avec ´ip route ´:
-![ Screen11](images/img12.png)
-
-3. Tester l'Internet:
-![ Screen12](images/img13.png)
-
-![ Screen13](images/img14.png)
 
 
-## Step 5 : Création d’un point de restauration(snapshot) :
-<p align="center"> <img src="images/img15.png" width="700"> </p> 
-<p align="center"> <img src="images/img16.png" width="800"> </p> 
-
-
-## Step 6 : Mise en place de l’environnement Android pour les tests :
-1. Activation de mode developpeur sur mon telephone dans Parametres en appuiant 7 fois sur Build number 
-<p align="center"> <img src="images/mobile2.jpeg" width="350"> </p>
-2. Dans Options pour developpeurs , on active USB DEBUGGING :
-<p align="center"> <img src="images/mobile1.jpeg" width="350"> </p>
-3. Dans VirtualBox, sur la machine click droit et on choisit Parametres puis USB , ensuite on clique sur +ajouter et on selectionne le telephone dans la liste :
-<p align="center"> <img src="images/img19.png" > </p>
-4. Verifier ladb dans Mobexler:
-<p align="center"> <img src="images/img18.png"> </p> <p align="center"> <img src="images/img17.png"> </p>
 
