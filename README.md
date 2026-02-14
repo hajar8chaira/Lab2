@@ -246,7 +246,7 @@ Accès écran détail + retour arrière
 
 --Réinitialisation
 
-Reset effectué : Oui / Non
+Reset effectué : Oui
 
 Méthode :  Wipe AVD
 
